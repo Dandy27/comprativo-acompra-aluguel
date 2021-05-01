@@ -3,7 +3,7 @@ class Compra {
   double combustivel;
   double manutencao;
   double seguroObrigatorio;
-  double seguro;
+  double? seguro;
   double ipva;
   double depreciacao;
   Compra({required this.parcelaFinanciamento, required this.combustivel, required this.manutencao,
@@ -13,6 +13,6 @@ class Compra {
     double total = parcelaFinanciamento + combustivel + manutencao + seguroObrigatorio + seguro + ipva - depreciacao ;
     print((total / 24).toStringAsFixed(2));
   }
-
+//tirar o ? double seguro
   
 }
